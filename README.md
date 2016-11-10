@@ -15,45 +15,29 @@ Your mission is to implement the Connect Four game as a Web API with a computer 
 
 Connect Four Web API should supports the following actions:
 
-1. Start a new game​ – the API should allow the user to start a new game.
+1. Start a new game – the API should allow the user to start a new game.
 
-a. Request Requirements
+  a. Request Requirements
 
-i. The player should be able to choose whether they want to play first or second
+    i. The player will be able to choose whether they want to play first or second i.e., disc color.
 
-i.e., disc color.
+  b. Response Requirements
 
-b. Response Requirements
+    i. A unique id for the game which will be used in subsequent API calls.
 
-i. A unique id for the game which can be used in subsequent API calls.
+    ii. The state of the game board (i.e. position of every played disc on the gameboard). If the player has elected to go second, the game board should show the first move made by the computer player.
 
-ii. The state of the game board (i.e. position of every played disc on the
+2. Single Player/Opponent Turn – the user will be able to play a move and in response see the resulting move of the computer opponent.
 
-gameboard). If the player has elected to go second, the game board should
+  a. Request Requirements
 
-show the first move made by the computer player.
+    i. The player should be able to indicate where on the gameboard they would like to play their disc.
 
-2. Single Player/Opponent Turn​ – the user must be able to play a move and in response see the
+  b. Response Requirements
 
-resulting move of the computer opponent.
+    i. The state of the game board (i.e. position of every played disc on the gameboard) after the player has made their move. The state should include the resulting move of computer opponent.
 
-a. Request Requirements
-
-i. The player should be able to indicate where on the gameboard they would like
-
-to play their disc.
-
-b. Response Requirements
-
-i. The state of the game board (i.e. position of every played disc on the
-
-gameboard) after the player has made their move. The state should include
-
-the resulting move of computer opponent.
-
-ii. The position on the gameboard where the computer opponent has placed
-
-their colored disc.
+  ii. The position on the gameboard where the computer opponent has placed their colored disc.
 
 ### Error Handling
 
